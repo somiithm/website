@@ -1,0 +1,40 @@
+.previous,.next{
+	width: 30px;
+	height: 30px;
+}
+
+.previous:hover,.next:hover{
+	width: 32px;
+	height:32px;
+}
+
+.right {
+    position: absolute;
+    right: 10px;
+}
+
+
+.header{
+	color: #aaaaaa;
+	padding-left:10px;
+}
+
+.verticaltext{
+    width:1px;
+    word-wrap: break-word;
+    font-family: monospace;
+}
+
+.grey{
+	background-color: #aaaaaa;
+}
+
+.whitetext{
+	color: white;
+}
+
+.col-2{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}

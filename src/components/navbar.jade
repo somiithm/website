@@ -1,0 +1,18 @@
+- var links = {  "About Me" : "/aboutme", "Interests": "/interests","Blog" : "/blog" }
+
+mixin nav-item(name, link)
+  li.nav-item
+    a.nav-link(href=link)= name
+
+link(href='./src/components/navbar.css', rel='stylesheet')
+  
+nav#mainTopNav.navbar.navbar-fixed-top.navbar-light.bg-blur.bg-color-transition
+  .container
+    
+    .navbar-brand 
+      a.nav-link(href="/") home
+    
+    ul.nav.navbar-nav
+      each val, key in links
+        +nav-item(key, val)
+  
